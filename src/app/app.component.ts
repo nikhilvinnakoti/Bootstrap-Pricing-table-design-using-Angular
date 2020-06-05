@@ -10,7 +10,7 @@ export class AppComponent {
   profileData = [
     {
       type: "FREE",
-      rate: "$0/month",
+      rate: "$0",
       userType: "Single User",
       Storage: "5GB Storage",
       Projects: "Unlimited Public Projects",
@@ -22,7 +22,7 @@ export class AppComponent {
     },
     {
       type: "PLUS",
-      rate: "$9/month",
+      rate: "$9",
       userType: "5 Users",
       Storage: "50GB Storage",
       Projects: "Unlimited Public Projects",
@@ -34,7 +34,7 @@ export class AppComponent {
     },
     {
       type: "PRO",
-      rate: "$45/month",
+      rate: "$45",
       userType: "Unlimited Users",
       Storage: "150GB Storage",
       Projects: "Unlimited Public Projects",

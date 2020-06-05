@@ -5,7 +5,7 @@
     <div class="card mb-4 shadow-sm">
       <div class="card-header">
         <h4 class="my-0 font-weight-medium" style ='font-size:medium;opacity:0.6;letter-spacing:1px'>{{data.type}}</h4>
-        <h1 class="card-title pricing-card-title">{{data.rate}}</h1>
+        <h1 class="card-title pricing-card-title">{{data.rate}}<span style ="font-size: small">/month</span></h1>
       </div>
       <div class="card-body">
         <ul class="list-unstyled mt-3 mb-4">
@@ -38,7 +38,7 @@
             [ngClass]="{disabled:data.type=='FREE'}">&#x2716;{{data.Domain}}</li>
           <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='5 Users'">&#x2714;{{data.Domain}}</li>
           <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Unlimited Users'">
-            <strong>&#x2714;{{data.Domain}}</strong></li>
+          &#x2714;{{data.Domain}}</li>
           &nbsp;
           <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Single User'"
             [ngClass]="{disabled:data.type=='FREE'}">&#x2716;{{data.Status}}</li>
