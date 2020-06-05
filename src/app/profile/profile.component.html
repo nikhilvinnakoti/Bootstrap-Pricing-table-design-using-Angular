@@ -1,0 +1,54 @@
+<br>
+<br>
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-medium" style ='font-size:medium;opacity:0.6;letter-spacing:1px'>{{data.type}}</h4>
+        <h1 class="card-title pricing-card-title">{{data.rate}}</h1>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled mt-3 mb-4">
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Single User'">&#x2714;{{data.userType}}
+          </li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='5 Users'">
+            <strong>&#x2714;{{data.userType}}</strong></li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Unlimited Users'">
+            <strong>&#x2714;{{data.userType}}</strong></li>
+          &nbsp;
+          <li style="text-align: left; margin-left:15px;">&#x2714;{{data.Storage}}</li>
+          &nbsp;
+          <li style="text-align: left; margin-left:15px;">&#x2714;{{data.Projects}}</li>
+          &nbsp;
+          <li style="text-align: left; margin-left:15px;">&#x2714;{{data.Access}}</li>
+          &nbsp;
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Single User'"
+            [ngClass]="{disabled:data.type=='FREE'}">&#x2716;{{data.Project}}</li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='5 Users'">&#x2714;{{data.Project}}</li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Unlimited Users'">
+            &#x2714;{{data.Project}}</li>
+          &nbsp;
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Single User'"
+            [ngClass]="{disabled:data.type=='FREE'}">&#x2716;{{data.Support}}</li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='5 Users'">&#x2714;{{data.Support}}</li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Unlimited Users'">
+            &#x2714;{{data.Support}}</li>
+          &nbsp;
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Single User'"
+            [ngClass]="{disabled:data.type=='FREE'}">&#x2716;{{data.Domain}}</li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='5 Users'">&#x2714;{{data.Domain}}</li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Unlimited Users'">
+            <strong>&#x2714;{{data.Domain}}</strong></li>
+          &nbsp;
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Single User'"
+            [ngClass]="{disabled:data.type=='FREE'}">&#x2716;{{data.Status}}</li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='5 Users'"
+            [ngClass]="{disabled:data.type=='PLUS'}">&#x2716;{{data.Status}}</li>
+          <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Unlimited Users'">
+            &#x2714;{{data.Status}}</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-primary" style="letter-spacing:1px;">BUTTON</button>
+      </div>
+    </div>
+  </div>
+</div>
