@@ -38,7 +38,7 @@
             [ngClass]="{disabled:data.type=='FREE'}">&#x2716;{{data.Domain}}</li>
           <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='5 Users'">&#x2714;{{data.Domain}}</li>
           <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Unlimited Users'">
-          &#x2714;{{data.Domain}}</li>
+            <strong>&#x2714;{{data.Domain}}</strong></li>
           &nbsp;
           <li style="text-align: left; margin-left:15px;" *ngIf="data.userType=='Single User'"
             [ngClass]="{disabled:data.type=='FREE'}">&#x2716;{{data.Status}}</li>
