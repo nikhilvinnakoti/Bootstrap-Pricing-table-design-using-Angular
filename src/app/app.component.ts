@@ -12,7 +12,7 @@ export class AppComponent {
       type: "FREE",
       rate: "$0",
       userType: "Single User",
-      Storage: "5GB Storage",
+      Storage: "50GB Storage",
       Projects: "Unlimited Public Projects",
       Access: "Community Access",
       Project: "Unlimited Private Projects",
