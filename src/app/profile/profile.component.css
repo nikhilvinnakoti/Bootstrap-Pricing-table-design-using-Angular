@@ -5,7 +5,7 @@
 }
 .card:hover {
     margin-top: -.30rem;
-    margin-bottom: .30rem;
+    margin-bottom: .30ngrem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
 button{
@@ -14,5 +14,5 @@ button{
     font-size: small;
 }
 .disabled{
-   opacity:0.6;          
+   opacity:0.5;          
 }
